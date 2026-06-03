@@ -5,6 +5,9 @@ spring:
   application:
     name: order-service
 
+  config:
+    import: optional:configserver:http://localhost:8888
+
   datasource:
     url: jdbc:oracle:thin:@localhost:1521/FREEPDB1
     username: order_service
